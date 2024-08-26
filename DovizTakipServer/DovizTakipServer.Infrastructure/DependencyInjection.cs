@@ -40,7 +40,9 @@ public static class DependencyInjection
             .AddDefaultTokenProviders();
 
         services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
+        
         services.ConfigureOptions<JwtTokenOptionsSetup>();
+
         services.AddAuthentication()
             .AddJwtBearer();
         services.AddAuthorizationBuilder();

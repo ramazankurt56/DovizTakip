@@ -1,14 +1,18 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 namespace DovizTakipServer.Infrastructure.Options;
 public sealed class JwtTokenOptionsSetup(
-    IOptions<JwtOptions> jwtOptions) : IPostConfigureOptions<JwtBearerOptions>
+    IOptions<JwtOptions> jwtOptions,
+    ILogger<JwtTokenOptionsSetup> logger
+    ) : IPostConfigureOptions<JwtBearerOptions>
 {
     public void PostConfigure(string? name, JwtBearerOptions options)
     {
+        logger.LogInformation("JwtTokenOptionsSetup.PostConfigure {options} {secretKey}", options, jwtOptions.Value.SecretKey);
         options.TokenValidationParameters.ValidateIssuer = true;
         options.TokenValidationParameters.ValidateAudience = true;
         options.TokenValidationParameters.ValidateLifetime = true;
