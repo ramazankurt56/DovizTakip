@@ -17,11 +17,11 @@ WORKDIR /src/DovizTakipServer.WebAPI
 RUN dotnet restore "DovizTakipServer.WebAPI.csproj"
 COPY . .
 WORKDIR "/src/DovizTakipServer.WebAPI"
-RUN dotnet build "./DovizTakipServer.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./DovizTakipServer.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build --no-restore
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./DovizTakipServer.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./DovizTakipServer.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false --no-restore
 
 FROM base AS final
 WORKDIR /app
