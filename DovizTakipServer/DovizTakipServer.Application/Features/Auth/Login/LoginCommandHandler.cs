@@ -3,13 +3,16 @@ using DovizTakipServer.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using TS.Result;
 
 namespace DovizTakipServer.Application.Features.Auth.Login;
 internal sealed class LoginCommandHandler(
     UserManager<AppUser> userManager,
     SignInManager<AppUser> signInManager,
-    IJwtProvider jwtProvider) : IRequestHandler<LoginCommand, Result<LoginCommandResponse>>
+    IJwtProvider jwtProvider,
+    ILogger<LoginCommandHandler> logger
+    ) : IRequestHandler<LoginCommand, Result<LoginCommandResponse>>
 {
     public async Task<Result<LoginCommandResponse>> Handle(LoginCommand request, CancellationToken cancellationToken)
     {
@@ -19,8 +22,15 @@ internal sealed class LoginCommandHandler(
             p.Email == request.EmailOrUserName,
             cancellationToken);
 
+
         if (user is null)
         {
+            logger.LogInformation("User couldn't be found in the database.");
+
+            var usersJson = await userManager.Users.ToListAsync();
+
+            logger.LogInformation($"{request.EmailOrUserName} Users json is {usersJson}");
+
             return (500, "Kullanıcı bulunamadı");
         }
 
