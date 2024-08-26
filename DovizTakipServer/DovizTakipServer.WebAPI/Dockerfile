@@ -9,14 +9,21 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+
 COPY ["DovizTakipServer/DovizTakipServer.WebAPI/DovizTakipServer.WebAPI.csproj", "DovizTakipServer.WebAPI/"]
 COPY ["DovizTakipServer/DovizTakipServer.Application/DovizTakipServer.Application.csproj", "DovizTakipServer.Application/"]
 COPY ["DovizTakipServer/DovizTakipServer.Domain/DovizTakipServer.Domain.csproj", "DovizTakipServer.Domain/"]
 COPY ["DovizTakipServer/DovizTakipServer.Infrastructure/DovizTakipServer.Infrastructure.csproj", "DovizTakipServer.Infrastructure/"]
-WORKDIR /src/DovizTakipServer.WebAPI
-RUN dotnet restore "DovizTakipServer.WebAPI.csproj"
-COPY ["DovizTakipServer/", "./"]
-WORKDIR "/src/DovizTakipServer.WebAPI"
+
+WORKDIR /src
+RUN dotnet restore "DovizTakipServer.WebAPI/DovizTakipServer.WebAPI.csproj"
+
+COPY ["DovizTakipServer/DovizTakipServer.WebAPI/", "DovizTakipServer.WebAPI/"]
+COPY ["DovizTakipServer/DovizTakipServer.Application/", "DovizTakipServer.Application/"]
+COPY ["DovizTakipServer/DovizTakipServer.Domain/", "DovizTakipServer.Domain/"]
+COPY ["DovizTakipServer/DovizTakipServer.Infrastructure/", "DovizTakipServer.Infrastructure/"]
+
+WORKDIR "/src/DovizTakipServer.WebAPI/"
 RUN dotnet build "./DovizTakipServer.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build --no-restore
 
 FROM build AS publish
