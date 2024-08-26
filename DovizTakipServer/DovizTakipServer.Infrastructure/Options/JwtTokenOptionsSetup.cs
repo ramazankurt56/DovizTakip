@@ -17,6 +17,12 @@ public sealed class JwtTokenOptionsSetup(
 
         var jwtConfiguration = configuration.GetSection("Jwt").Value;
 
+        configuration.AsEnumerable()
+            .ToList()
+            .ForEach(x =>
+            logger.LogInformation("JwtTokenOptionsSetup.PostConfigure {key}: {value}", x.Key, x.Value)
+              );
+
         logger.LogInformation("JwtTokenOptionsSetup.PostConfigure {options} {secretKey}", options, jwtOptions.Value.SecretKey);
 
         logger.LogInformation("JwtTokenOptionsSetup.PostConfigure jwt config from configuration {configuration}", jwtConfiguration);
