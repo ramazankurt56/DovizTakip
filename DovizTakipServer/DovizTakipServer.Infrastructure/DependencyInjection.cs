@@ -39,7 +39,8 @@ public static class DependencyInjection
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
-        services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
+        services
+            .Configure<JwtOptions>(configuration.GetSection("Jwt"));
         
         services.ConfigureOptions<JwtTokenOptionsSetup>();
 
