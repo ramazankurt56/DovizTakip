@@ -10,17 +10,8 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // CORS Policy Configuration
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowSpecificOrigin",
-        builder => builder
-            .WithOrigins(
-                "https://doviztakipapi.ramazankurt.com.tr"
-            )
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials()); // Gerekirse ekleyin
-});
+builder.Services.AddControllers();
+builder.Services.AddDefaultCors();
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -28,33 +19,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddExceptionHandler<ExceptionHandler>();
 builder.Services.AddProblemDetails();
 
-builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(setup =>
-{
-    var jwtSecuritySheme = new OpenApiSecurityScheme
-    {
-        BearerFormat = "JWT",
-        Name = "JWT Authentication",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.Http,
-        Scheme = JwtBearerDefaults.AuthenticationScheme,
-        Description = "Put **_ONLY_** your JWT Bearer token in the textbox below!",
-
-        Reference = new OpenApiReference
-        {
-            Id = JwtBearerDefaults.AuthenticationScheme,
-            Type = ReferenceType.SecurityScheme
-        }
-    };
-
-    setup.AddSecurityDefinition(jwtSecuritySheme.Reference.Id, jwtSecuritySheme);
-
-    setup.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        { jwtSecuritySheme, Array.Empty<string>() }
-    });
-});
 
 builder.Services.AddSignalR();
 
@@ -72,7 +38,7 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-app.UseCors("AllowSpecificOrigin");
+app.UseCors();
 
 app.UseAuthentication();
 app.UseAuthorization();
