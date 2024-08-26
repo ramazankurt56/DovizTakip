@@ -9,17 +9,18 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
+// CORS Policy Configuration
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
         builder => builder
-            .WithOrigins("http://localhost:7054", "https://localhost:7054", "https://doviztakipapi.ramazankurt.com.tr") 
+            .WithOrigins(
+                "https://doviztakipapi.ramazankurt.com.tr"
+            )
             .AllowAnyMethod()
-            .AllowAnyHeader());
+            .AllowAnyHeader()
+            .AllowCredentials()); // Gerekirse ekleyin
 });
-
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -38,7 +39,7 @@ builder.Services.AddSwaggerGen(setup =>
         In = ParameterLocation.Header,
         Type = SecuritySchemeType.Http,
         Scheme = JwtBearerDefaults.AuthenticationScheme,
-        Description = "Put **_ONLY_** yourt JWT Bearer token on textbox below!",
+        Description = "Put **_ONLY_** your JWT Bearer token in the textbox below!",
 
         Reference = new OpenApiReference
         {
@@ -50,9 +51,9 @@ builder.Services.AddSwaggerGen(setup =>
     setup.AddSecurityDefinition(jwtSecuritySheme.Reference.Id, jwtSecuritySheme);
 
     setup.AddSecurityRequirement(new OpenApiSecurityRequirement
-                {
-                    { jwtSecuritySheme, Array.Empty<string>() }
-                });
+    {
+        { jwtSecuritySheme, Array.Empty<string>() }
+    });
 });
 
 builder.Services.AddSignalR();
@@ -69,12 +70,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors();
+app.UseRouting();
+
+app.UseCors("AllowSpecificOrigin");
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseExceptionHandler();
 
 app.MapControllers();
-
 
 app.MapHub<TakipHub>("/takip-hub");
 
