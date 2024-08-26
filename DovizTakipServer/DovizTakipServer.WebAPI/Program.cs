@@ -19,12 +19,6 @@ builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddExceptionHandler<ExceptionHandler>();
 builder.Services.AddProblemDetails();
 
-builder.Configuration.AddConfiguration(
-    new ConfigurationBuilder()
-    .AddJsonFile("appsettings.json")
-    .Build()
-    );
-
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(setup =>
