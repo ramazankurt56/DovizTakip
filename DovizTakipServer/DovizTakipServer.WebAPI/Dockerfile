@@ -15,7 +15,7 @@ COPY ["DovizTakipServer/DovizTakipServer.Domain/DovizTakipServer.Domain.csproj",
 COPY ["DovizTakipServer/DovizTakipServer.Infrastructure/DovizTakipServer.Infrastructure.csproj", "DovizTakipServer.Infrastructure/"]
 WORKDIR /src/DovizTakipServer.WebAPI
 RUN dotnet restore "DovizTakipServer.WebAPI.csproj"
-COPY . .
+COPY ["DovizTakipServer/", .]
 WORKDIR "/src/DovizTakipServer.WebAPI"
 RUN dotnet build "./DovizTakipServer.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build --no-restore
 
