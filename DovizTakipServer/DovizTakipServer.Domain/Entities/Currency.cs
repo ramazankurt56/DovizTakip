@@ -18,7 +18,7 @@ public sealed class Currency
         {
             Amount = amount,
             Type = CurrencyTypeEnum.FromValue(typeValue),
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.UtcNow
         };
 
         return currency;

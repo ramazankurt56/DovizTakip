@@ -1,0 +1,46 @@
+services:
+  postgres:
+    image: postgres
+    restart: always
+    container_name: postgresdovizdb
+    environment:
+      POSTGRES_DB: doviz
+      POSTGRES_USER: dovizsa
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5436:5432"
+    volumes:
+      - doviz_postgres_data:/var/lib/postgresql/data
+    networks:
+      - doviz-network
+  doviz-api:
+    restart: always 
+    build:
+      context: .
+      dockerfile: ./DovizTakipServer/DovizTakipServer.WebAPI/Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - "5040:8080"
+      - "5041:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=doviz;Username=dovizsa;Password=${POSTGRES_PASSWORD}
+    networks:
+      - doviz-network
+  doviz-client:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./DovizTakipClient/Dockerfile
+    ports:
+      - "5042:80"
+    networks:
+      - doviz-network
+networks:
+  doviz-network:
+    driver: bridge
+
+
+volumes:
+  doviz_postgres_data:

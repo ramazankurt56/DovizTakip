@@ -1,14 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\YMYP1\\08.Projeler\\DovizTakip\\DovizTakipServer\\",
+  "WorkspaceRootPath": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\services\\autodovizbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|solutionrelative:doviztakipserver.webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\services\\autodovizbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|solutionrelative:doviztakipserver.webapi\\services\\autodovizbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\abstractions\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|solutionrelative:doviztakipserver.webapi\\abstractions\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\controllers\\currenciescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|solutionrelative:doviztakipserver.webapi\\controllers\\currenciescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|solutionrelative:doviztakipserver.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.infrastructure\\backgroundjobs\\seedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|solutionrelative:doviztakipserver.infrastructure\\backgroundjobs\\seedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|solutionrelative:doviztakipserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|solutionrelative:doviztakipserver.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.infrastructure\\backgroundjobs\\databasemigratorjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|solutionrelative:doviztakipserver.infrastructure\\backgroundjobs\\databasemigratorjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.webapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{80F808C6-FBFD-4DE6-937D-D71FC779B819}|DovizTakipServer.WebAPI\\DovizTakipServer.WebAPI.csproj|solutionrelative:doviztakipserver.webapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|c:\\users\\ramaz\\source\\repos\\doviztakip\\doviztakipserver\\doviztakipserver.infrastructure\\migrations\\20240826083901_mg1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A676EE9-7A8F-4F86-87CE-F331E4206A15}|DovizTakipServer.Infrastructure\\DovizTakipServer.Infrastructure.csproj|solutionrelative:doviztakipserver.infrastructure\\migrations\\20240826083901_mg1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,53 +54,160 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Dockerfile",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Dockerfile",
+              "RelativeToolTip": "DovizTakipServer.WebAPI\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-26T09:03:28.616Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Program.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Program.cs",
-              "RelativeToolTip": "DovizTakipServer.WebAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABAAAAA",
+              "Title": "AutoDovizBackgroundService.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
+              "RelativeToolTip": "DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T19:50:16.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T08:56:00.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutoDovizBackgroundService.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
-              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
-              "RelativeToolTip": "DovizTakipServer.WebAPI\\Services\\AutoDovizBackgroundService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAgwB4AAAAnAAAA",
+              "DocumentIndex": 2,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Abstractions\\ApiController.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Abstractions\\ApiController.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Abstractions\\ApiController.cs",
+              "RelativeToolTip": "DovizTakipServer.WebAPI\\Abstractions\\ApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T19:48:35.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T08:50:19.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "DovizTakipServer.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:49:52.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CurrenciesController.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Controllers\\CurrenciesController.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Controllers\\CurrenciesController.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Controllers\\CurrenciesController.cs",
+              "RelativeToolTip": "DovizTakipServer.WebAPI\\Controllers\\CurrenciesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:49:42.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\Program.cs",
+              "RelativeToolTip": "DovizTakipServer.WebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:44:52.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SeedJob.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\BackgroundJobs\\SeedJob.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.Infrastructure\\BackgroundJobs\\SeedJob.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\BackgroundJobs\\SeedJob.cs",
+              "RelativeToolTip": "DovizTakipServer.Infrastructure\\BackgroundJobs\\SeedJob.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA3wBwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:41:33.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "DovizTakipServer.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:41:00.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseMigratorJob.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\BackgroundJobs\\DatabaseMigratorJob.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.Infrastructure\\BackgroundJobs\\DatabaseMigratorJob.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\BackgroundJobs\\DatabaseMigratorJob.cs",
+              "RelativeToolTip": "DovizTakipServer.Infrastructure\\BackgroundJobs\\DatabaseMigratorJob.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:40:22.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "DovizTakipServer.WebAPI\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.WebAPI\\appsettings.Production.json",
+              "RelativeToolTip": "DovizTakipServer.WebAPI\\appsettings.Production.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-26T08:39:52.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240826083901_Mg1.cs",
+              "DocumentMoniker": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\Migrations\\20240826083901_Mg1.cs",
+              "RelativeDocumentMoniker": "DovizTakipServer.Infrastructure\\Migrations\\20240826083901_Mg1.cs",
+              "ToolTip": "C:\\Users\\ramaz\\source\\repos\\DovizTakip\\DovizTakipServer\\DovizTakipServer.Infrastructure\\Migrations\\20240826083901_Mg1.cs",
+              "RelativeToolTip": "DovizTakipServer.Infrastructure\\Migrations\\20240826083901_Mg1.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:39:02.035Z"
             }
           ]
         }

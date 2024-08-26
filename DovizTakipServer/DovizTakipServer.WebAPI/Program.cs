@@ -65,7 +65,6 @@ app.UseExceptionHandler();
 
 app.MapControllers();
 
-ExtensionsMiddleware.CreateFirstUser(app);
 
 app.MapHub<TakipHub>("/takip-hub");
 

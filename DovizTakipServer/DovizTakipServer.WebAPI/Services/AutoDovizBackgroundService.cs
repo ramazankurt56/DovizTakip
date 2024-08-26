@@ -10,7 +10,7 @@ public class AutoDovizBackgroundService(IHubContext<TakipHub> hubContext) : Back
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            await Task.Delay(1000);
+            await Task.Delay(5000);
 
             await CreateCurrency(1);
             await CreateCurrency(2);

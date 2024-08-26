@@ -1,9 +1,9 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { api } from '../constants';
 import { ResultModel } from '../models/result.model';
 import { AuthService } from './auth.service';
 import { ErrorService } from './error.service';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class HttpService {
   ) { }
 
   post<T>(apiUrl:string, body:any, callBack:(res:T)=> void,errorCallBack?:()=> void ){
-    this.http.post<ResultModel<T>>(`${api}/${apiUrl}`,body,{
+    this.http.post<ResultModel<T>>(`${environment.api_url}/${apiUrl}`,body,{
       headers: {
         "Authorization": "Bearer " + this.auth.token
       }

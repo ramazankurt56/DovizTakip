@@ -39,6 +39,9 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/erpclient",
+            "allowedCommonJsDependencies": [
+        "sweetalert2"
+      ],
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -68,6 +71,13 @@
                   "maximumError": "4kb"
                 }
               ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+,
               "outputHashing": "all"
             },
             "development": {
@@ -109,8 +119,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
+  "src/styles.css",
+  "src/assets/plugins/fontawesome-free/css/all.min.css",
+  "src/assets/dist/css/adminlte.min.css"
+],
             "scripts": []
           }
         }

@@ -1,4 +1,5 @@
 ﻿using DovizTakipServer.Domain.Entities;
+using DovizTakipServer.Infrastructure.BackgroundJobs;
 using DovizTakipServer.Infrastructure.Context;
 using DovizTakipServer.Infrastructure.Options;
 using GenericRepository;
@@ -16,11 +17,12 @@ public static class DependencyInjection
     {
         services.AddDbContext<ApplicationDbContext>(options =>
         {
-            options.UseSqlServer(configuration.GetConnectionString("SqlServer"));
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
         });
 
         services.AddScoped<IUnitOfWork>(srv => srv.GetRequiredService<ApplicationDbContext>());
-
+        services.AddHostedService<DatabaseMigratorJob>();
+        services.AddTransient<SeedJob>();
         services
             .AddIdentity<AppUser, IdentityRole<Guid>>(cfr =>
             {
